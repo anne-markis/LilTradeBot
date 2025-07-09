@@ -1,0 +1,15 @@
+[project]
+name = "liltradebot"
+version = "0.1.0"
+description = "A lightweight trading assistant bot for US securities"
+authors = [{name = "Your Name"}]
+dependencies = [
+    "robin-stocks",
+    "requests",
+    "openai",
+    "pandas",
+    "python-dotenv",
+]
+
+[tool.uv]
+# optional: configure uv-specific behaviors
