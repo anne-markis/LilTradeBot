@@ -10,7 +10,7 @@ dependencies = [
     "openai",
     "pandas",
     "python-dotenv",
-    "finnhub"
+    "finnhub-python"
 ]
 
 [tool.uv]
