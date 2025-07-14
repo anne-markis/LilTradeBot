@@ -2,13 +2,15 @@
 name = "liltradebot"
 version = "0.1.0"
 description = "A lightweight trading assistant bot for US securities"
-authors = [{name = "Your Name"}]
+authors = [{name = "AMGraham"}]
+requires-python = ">=3.10"
 dependencies = [
     "robin-stocks",
     "requests",
     "openai",
     "pandas",
     "python-dotenv",
+    "finnhub"
 ]
 
 [tool.uv]

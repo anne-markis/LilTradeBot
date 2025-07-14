@@ -8,7 +8,7 @@ class RobinhoodBroker(BaseBroker):
     def login(self):
         username = os.getenv("RH_USERNAME")
         password = os.getenv("RH_PASSWORD")
-        print(f"wtf {username}{password}") # TODO remove
+
         r.login(username, password)
 
     def get_holdings(self) -> Any:

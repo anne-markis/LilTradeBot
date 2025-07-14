@@ -2,7 +2,21 @@
 
 Simple but opinionated OpenAI LLM helper for deciding which trades to make.
 
+## Method
+
+* Get live portfolio
+* Get buy/sell/hold advice on tax loss harvesting
+* Get buy/sell/hold advice on upcoming earnings releases
+* Have a final opinion that aggregates the information
+
 This is not formal financial advice.
+
+Future improvements:
+* Hook into CapitolTrades
+* Use Twelvedata (or similar) API to get candlestick data
+* Use Newapi (or similar) to get ticker news
+
+### Notes
 
 This bot cannot make trades on your behalf (yet).
 
@@ -31,13 +45,14 @@ $ python -m liltradebot.main
 ```
 
 
-
-
 ### .env skeleton
-
-TODO fill out
 
 ```
 OPENAI_API_KEY=
+PORTFOLIO_SOURCE=robinhood
 
+RH_USERNAME=
+RH_PASSWORD=
+
+FINNHUB_KEY=
 ```
